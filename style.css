@@ -1,8 +1,104 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 350px;
+  height: 240px;
+  background: rgb(238, 238, 240);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  transition: 0.4s;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.card:hover{
+  height: 270px;
+  transition: 0.7s all;
+}
+
+.heading{
+  padding: 8px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color:indigo;
+  font-size: 2rem;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.form {
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 14px;
+  z-index: 99;
+}
+
+.form-input > input {
+  background-color: rgb(238, 238, 240);
+  width: 300px;
+  height: 35px;
+  box-shadow: inset -4px -4px 6px rgba(255, 255, 255, 0.7),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: rgb(129, 115, 115);
+  border: none;
+  margin-bottom: 25px;
+  outline: none;
+  font-family: "Montserrat" sans-serif;
+  font-size: medium;
+  padding-left: 20px;
+}
+
+.form-checkbox > input {
+  width: 15px;
+  height: 15px;
+  box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.5);
+  padding: 0px 2px;
+}
+
+.form-checkbox > button {
+  width: 100px;
+  height: 35px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  box-shadow: -4px -4px 6px rgba(255, 255, 255, 1),
+    3px 3px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgb(16, 145, 12);
+  font-family: "Montserrat" sans-serif;
+  font-size: medium;
+  color: white;
+  margin-left: 80px;
+  border: none;
+  transition: all 0.4s;
+}
+
+.form-checkbox > button:hover {
+  background-color: rgb(102, 230, 76);
+}
+
+.forgot a {
+  text-decoration: none;
+  color: rgb(103, 236, 136);
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.forgot a:hover {
+  color: rgb(107, 85, 204);
+}
+.forgot {
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 20px;
 }
